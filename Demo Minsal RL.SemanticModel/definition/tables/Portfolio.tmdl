@@ -1,0 +1,1336 @@
+table Portfolio
+	lineageTag: 9a3122be-124b-4802-89ba-eb3d3b725c49
+
+	measure '# Proyectos' = COUNT(Portfolio[Proyecto])
+		formatString: 0
+		lineageTag: 0d4ed2f7-2040-4982-ac31-174b7bf2d157
+
+	measure '% Avance' = SUM(Portfolio[%Avance real])*100
+		lineageTag: e026891c-3f80-4a8c-9ff8-f2e34a8bf3ad
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column map
+		dataType: string
+		lineageTag: ccb9b22c-27c2-4b09-be52-89f1fbfae87f
+		summarizeBy: none
+		sourceColumn: map
+
+		annotation SummarizationSetBy = Automatic
+
+	column Proyecto
+		dataType: string
+		lineageTag: 98b8953d-ce61-4d07-b025-3b40c4343a61
+		summarizeBy: none
+		sourceColumn: Proyecto
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tipo Ficha'
+		dataType: string
+		lineageTag: 9b409309-a90d-486d-b94e-c290b423a376
+		summarizeBy: none
+		sourceColumn: Tipo Ficha
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Jefe Proyecto'
+		dataType: string
+		lineageTag: cb2f2c45-81ef-461a-a86c-7bde64485429
+		summarizeBy: none
+		sourceColumn: Jefe Proyecto
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tiempo actualización'
+		dataType: int64
+		formatString: 0
+		lineageTag: beb96dc6-669c-4ce3-bb11-eb7621b96221
+		summarizeBy: sum
+		sourceColumn: Tiempo actualización
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Código BIP'
+		dataType: int64
+		formatString: 0
+		lineageTag: 3d28e81f-133f-45e8-803a-9d6e92d26d6c
+		summarizeBy: sum
+		sourceColumn: Código BIP
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Región N°'
+		dataType: string
+		lineageTag: ca30dbf8-ebb9-42fe-a687-0b242a151e2f
+		summarizeBy: none
+		sourceColumn: Región N°
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Servicio Salud'
+		dataType: string
+		lineageTag: 283d74d8-8422-4bc7-8c2b-df63f9b307df
+		summarizeBy: none
+		sourceColumn: Servicio Salud
+
+		annotation SummarizationSetBy = Automatic
+
+	column Comuna
+		dataType: string
+		lineageTag: dfec78a0-c806-4224-bc0e-fadb125355ce
+		summarizeBy: none
+		sourceColumn: Comuna
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Comuna de Influencia'
+		dataType: string
+		lineageTag: aaae4f00-2d12-4586-9e5c-1c20bc5cc43f
+		summarizeBy: none
+		sourceColumn: Comuna de Influencia
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tipo
+		dataType: string
+		lineageTag: 054de947-148d-4c73-9a90-1e2e4678e440
+		summarizeBy: none
+		sourceColumn: Tipo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cartera
+		dataType: string
+		lineageTag: 4e9fe2fc-5286-4529-822b-0464ef924378
+		summarizeBy: none
+		sourceColumn: Cartera
+
+		annotation SummarizationSetBy = Automatic
+
+	column Complejidad
+		dataType: string
+		lineageTag: 737f0e62-8556-4685-a35b-fee5b7700565
+		summarizeBy: none
+		sourceColumn: Complejidad
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tipo CESFAM'
+		dataType: string
+		lineageTag: 6d86093e-3baf-41ce-b640-4ad43519d2a7
+		summarizeBy: none
+		sourceColumn: Tipo CESFAM
+
+		annotation SummarizationSetBy = Automatic
+
+	column Estado
+		dataType: string
+		lineageTag: 7c4877cf-0605-47d3-99b9-46058a3eb025
+		summarizeBy: none
+		sourceColumn: Estado
+
+		annotation SummarizationSetBy = Automatic
+
+	column Subestado
+		dataType: string
+		lineageTag: 6ce4da57-024a-4c3f-bba5-55eae00e9692
+		summarizeBy: none
+		sourceColumn: Subestado
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Estatus mes actual'
+		dataType: string
+		lineageTag: 020eb9d5-d2f7-43c1-9a12-1cecb5f0418d
+		summarizeBy: none
+		sourceColumn: Estatus mes actual
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Modalidad contratación'
+		dataType: string
+		lineageTag: 62090630-c346-4d5d-9522-d02c89e0661a
+		summarizeBy: none
+		sourceColumn: Modalidad contratación
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fase diseño-ejecución'
+		dataType: string
+		lineageTag: fab88feb-a931-4593-b6d1-71d5b3100c1c
+		summarizeBy: none
+		sourceColumn: Fase diseño-ejecución
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Poblacion beneficiaria'
+		dataType: int64
+		formatString: 0
+		lineageTag: 33017138-c038-4a5d-8d23-981cd306d033
+		summarizeBy: sum
+		sourceColumn: Poblacion beneficiaria
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Superficie (m2)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 3c22b1c8-62cb-4ada-aa75-ca0435ed8b2d
+		summarizeBy: sum
+		sourceColumn: Superficie (m2)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'N° de camas actuales'
+		dataType: int64
+		formatString: 0
+		lineageTag: 500760ea-cfe3-4b43-8405-f1a960ca9ac1
+		summarizeBy: sum
+		sourceColumn: N° de camas actuales
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'N° de camas proyectado'
+		dataType: int64
+		formatString: 0
+		lineageTag: 2801e2a5-98a8-4c1d-a8ea-3afefb086a62
+		summarizeBy: sum
+		sourceColumn: N° de camas proyectado
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'N° de pabellones'
+		dataType: int64
+		formatString: 0
+		lineageTag: 083cae16-cc24-49d0-9198-856905d91658
+		summarizeBy: sum
+		sourceColumn: N° de pabellones
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'N° camas básicas'
+		dataType: int64
+		formatString: 0
+		lineageTag: 17a2f711-27df-4dc2-b663-6032dc0ce1b3
+		summarizeBy: sum
+		sourceColumn: N° camas básicas
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'N° camas críticas'
+		dataType: int64
+		formatString: 0
+		lineageTag: 9f0833fa-ada2-4e2c-b98e-002f82008847
+		summarizeBy: sum
+		sourceColumn: N° camas críticas
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'N° camas agudas'
+		dataType: int64
+		formatString: 0
+		lineageTag: 0149cfb2-32e7-4670-8da5-707fb149fd4a
+		summarizeBy: sum
+		sourceColumn: N° camas agudas
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'N° camas salud mental'
+		dataType: int64
+		formatString: 0
+		lineageTag: 9ec97dcd-f871-4338-b2e8-f7c91d2092fa
+		summarizeBy: sum
+		sourceColumn: N° camas salud mental
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'N° salas parto integral'
+		dataType: int64
+		formatString: 0
+		lineageTag: 2d4fdfea-4137-420f-b475-3b80505b41c4
+		summarizeBy: sum
+		sourceColumn: N° salas parto integral
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Otras Camas'
+		dataType: int64
+		formatString: 0
+		lineageTag: de7eeccf-6e0b-40df-8500-8b0daf633734
+		summarizeBy: sum
+		sourceColumn: Otras Camas
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'N° box total'
+		dataType: int64
+		formatString: 0
+		lineageTag: 303a540d-7e14-49e0-b43f-9450c46797e0
+		summarizeBy: sum
+		sourceColumn: N° box total
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'N° box médicos'
+		dataType: int64
+		formatString: 0
+		lineageTag: 18ac50ca-9706-473d-b612-6ebc935c2ca6
+		summarizeBy: sum
+		sourceColumn: N° box médicos
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'N° box no médicos'
+		dataType: int64
+		formatString: 0
+		lineageTag: 4410b9c0-1d76-4c05-98ad-b3dde308dce4
+		summarizeBy: sum
+		sourceColumn: N° box no médicos
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'N° box dental'
+		dataType: int64
+		formatString: 0
+		lineageTag: 7f0e8c08-54b6-4611-a742-54d5eb5d6ebc
+		summarizeBy: sum
+		sourceColumn: N° box dental
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'N° salas de procedimiento'
+		dataType: int64
+		formatString: 0
+		lineageTag: 5da04f3b-5053-468d-90f0-0176e0f12c85
+		summarizeBy: sum
+		sourceColumn: N° salas de procedimiento
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'N° sillones diálisis'
+		dataType: int64
+		formatString: 0
+		lineageTag: 5a5758b4-6a7f-4baf-9b6c-a5d41a5e2cbf
+		summarizeBy: sum
+		sourceColumn: N° sillones diálisis
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'N° sillones QT'
+		dataType: int64
+		formatString: 0
+		lineageTag: 4f72f7b7-61dd-4fd3-baf8-0d5b345caf0e
+		summarizeBy: sum
+		sourceColumn: N° sillones QT
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Rate vigente'
+		dataType: string
+		lineageTag: 0683f1d8-54c1-49ca-aa5a-25a24ac6c4f2
+		summarizeBy: none
+		sourceColumn: Rate vigente
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Convenio programación'
+		dataType: string
+		lineageTag: d6da5efc-7f5e-45dd-b35c-c2ebc72e4fcb
+		summarizeBy: none
+		sourceColumn: Convenio programación
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Financ. etapa actual'
+		dataType: string
+		lineageTag: 53da4ec2-2264-4a01-a457-c246955e44c5
+		summarizeBy: none
+		sourceColumn: Financ. etapa actual
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Monto Ficha IDI M$'
+		dataType: int64
+		formatString: 0
+		lineageTag: f701168c-7958-45e5-9240-8dc956044925
+		summarizeBy: sum
+		sourceColumn: Monto Ficha IDI M$
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Programa gobierno'
+		dataType: string
+		lineageTag: 49d8bd82-cd26-4f26-88b6-410dee3ad438
+		summarizeBy: none
+		sourceColumn: Programa gobierno
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Detalle del mes'
+		dataType: string
+		lineageTag: 77efd590-4203-4d10-9c36-1f0fe791911c
+		summarizeBy: none
+		sourceColumn: Detalle del mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nudos Críticos'
+		dataType: string
+		lineageTag: c5ab5db7-e814-4d77-9da1-fa9113fe9628
+		summarizeBy: none
+		sourceColumn: Nudos Críticos
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Acciones Correctivas'
+		dataType: string
+		lineageTag: a3fe840d-953f-433b-b57e-68bd40c998c4
+		summarizeBy: none
+		sourceColumn: Acciones Correctivas
+
+		annotation SummarizationSetBy = Automatic
+
+	column '%Avance real'
+		dataType: double
+		lineageTag: 748b434c-7ee5-490a-b426-fed5e092ece6
+		summarizeBy: sum
+		sourceColumn: %Avance real
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '%Avance plan'
+		dataType: double
+		lineageTag: d311aabc-39ee-4569-b7e2-d9f6ac484033
+		summarizeBy: sum
+		sourceColumn: %Avance plan
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Desviación
+		dataType: double
+		lineageTag: 123eb2cc-548a-4fca-ae95-b02bd683facc
+		summarizeBy: sum
+		sourceColumn: Desviación
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Fecha última actualización'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: a7eeb8c1-d135-441a-a0d7-7164e2669977
+		summarizeBy: none
+		sourceColumn: Fecha última actualización
+
+		variation Variación
+			isDefault
+			relationship: 7e37cd2d-53f8-43be-8d0c-e238dddadcf6
+			defaultHierarchy: LocalDateTable_d53a9b8a-78f4-4689-a3bb-c93b7deb3682.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Usuario última actualización'
+		dataType: string
+		lineageTag: 4d7b7d29-c9b0-43aa-84da-8e589d31f1e1
+		summarizeBy: none
+		sourceColumn: Usuario última actualización
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Empresa encargada estudio'
+		dataType: string
+		lineageTag: 93361a27-ea4b-47bf-8af4-743f91b22618
+		summarizeBy: none
+		sourceColumn: Empresa encargada estudio
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fecha inicio estudio'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 1d7bc787-5099-464d-9fb6-697c657a8a56
+		summarizeBy: none
+		sourceColumn: Fecha inicio estudio
+
+		variation Variación
+			isDefault
+			relationship: dd37fef7-ed92-48a3-a601-4d3ef7e9643d
+			defaultHierarchy: LocalDateTable_d4169f55-9ec8-4c04-89a5-6ffe72060bd8.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Fecha término estimada estudio'
+		dataType: string
+		lineageTag: 0567c530-6503-4b69-9015-952265b03bc2
+		summarizeBy: none
+		sourceColumn: Fecha término estimada estudio
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Superficie PMA (M2)'
+		dataType: int64
+		formatString: 0
+		lineageTag: de346c7f-97be-4b9f-946f-ab35b1becec6
+		summarizeBy: sum
+		sourceColumn: Superficie PMA (M2)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Coordinador proyecto estudios'
+		dataType: string
+		lineageTag: 1d62615a-cabc-4b2f-99a9-0ca1135497e9
+		summarizeBy: none
+		sourceColumn: Coordinador proyecto estudios
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Información interna estudios'
+		dataType: string
+		lineageTag: 081328a5-2359-4969-811d-e0d80fcaa68b
+		summarizeBy: none
+		sourceColumn: Información interna estudios
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Empresa encargada diseño'
+		dataType: string
+		lineageTag: cfc1dd88-d10c-4858-8055-eb0260cb96e6
+		summarizeBy: none
+		sourceColumn: Empresa encargada diseño
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fecha inicio diseño'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 5cd0d03d-ab22-47e4-88d8-f64e925e110e
+		summarizeBy: none
+		sourceColumn: Fecha inicio diseño
+
+		variation Variación
+			isDefault
+			relationship: 41c07738-5026-4e0b-a041-aaad6f09e599
+			defaultHierarchy: LocalDateTable_832751e2-4224-4647-9271-ec86530cf0a2.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Fecha término estimada diseño'
+		dataType: string
+		lineageTag: b3d772b3-ae33-40a8-a292-3b5009a5ec05
+		summarizeBy: none
+		sourceColumn: Fecha término estimada diseño
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fecha RS diseño'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: b81e4be6-aa28-40ba-b14e-387e3c25d0d0
+		summarizeBy: none
+		sourceColumn: Fecha RS diseño
+
+		variation Variación
+			isDefault
+			relationship: a03aeef3-08e7-49f6-b088-65497ecde889
+			defaultHierarchy: LocalDateTable_63ebcd9b-5e03-4159-a32d-f40fade95926.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Superficie diseño (m2)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 06e1e226-72c2-4207-8b94-cdf6a28fbd75
+		summarizeBy: sum
+		sourceColumn: Superficie diseño (m2)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Información interna diseño'
+		dataType: string
+		lineageTag: f608cb24-7104-45b7-a6f0-44804fd54747
+		summarizeBy: none
+		sourceColumn: Información interna diseño
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Id licitación'
+		dataType: string
+		lineageTag: fc6157c4-aaf4-4d5b-878b-aa0efa4b6da8
+		summarizeBy: none
+		sourceColumn: Id licitación
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Bases de licitación'
+		dataType: string
+		lineageTag: 3854e61f-e35b-429e-b74e-a19be8c20490
+		summarizeBy: none
+		sourceColumn: Bases de licitación
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fecha publicación'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: d037879e-b53d-45c3-ab65-90964927b3f5
+		summarizeBy: none
+		sourceColumn: Fecha publicación
+
+		variation Variación
+			isDefault
+			relationship: 1a3f41cc-f437-4478-8f12-53d34bebcda4
+			defaultHierarchy: LocalDateTable_8ca8f447-e026-4473-84cd-fd3c8e3b306a.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Fecha apertura técnica'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: c93eb656-1c1e-4d93-9fc1-154a771b0728
+		summarizeBy: none
+		sourceColumn: Fecha apertura técnica
+
+		variation Variación
+			isDefault
+			relationship: 62112d25-23d8-4a77-afd8-c361de699f98
+			defaultHierarchy: LocalDateTable_0f865f71-cf95-4e60-8a1e-9645026aea89.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Fecha adjudicación portal'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 5ba7c146-d6de-4958-877f-b0da0f788d75
+		summarizeBy: none
+		sourceColumn: Fecha adjudicación portal
+
+		variation Variación
+			isDefault
+			relationship: 7e942d2c-9bf4-4b7c-b90a-14f5721c1709
+			defaultHierarchy: LocalDateTable_69ef80a7-972c-4977-b180-8c97577a8ccc.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Presupuesto estimado ($)'
+		dataType: int64
+		formatString: 0
+		lineageTag: cdbbd558-6b41-42e2-9b21-26a6a43d8ce8
+		summarizeBy: sum
+		sourceColumn: Presupuesto estimado ($)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Empresas oferentes'
+		dataType: string
+		lineageTag: 0590dc5b-e4db-4f61-9826-fd5f418eeca9
+		summarizeBy: none
+		sourceColumn: Empresas oferentes
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Empresa adjudicada'
+		dataType: string
+		lineageTag: 1f65a8d2-4b85-43d3-ae44-98e8e0ea6e89
+		summarizeBy: none
+		sourceColumn: Empresa adjudicada
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fecha aprobación contrato'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 57513955-e0d9-47ef-b969-c4ae649e17c5
+		summarizeBy: none
+		sourceColumn: Fecha aprobación contrato
+
+		variation Variación
+			isDefault
+			relationship: eac9809d-5ff3-402f-b256-544d1f231411
+			defaultHierarchy: LocalDateTable_98c27d9c-ee02-47c7-96f9-b2da37306077.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Fecha entrega terreno'
+		dataType: string
+		lineageTag: 1d09036f-9176-4432-9264-de3c2d6264c5
+		summarizeBy: none
+		sourceColumn: Fecha entrega terreno
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'RUT Constructora'
+		dataType: string
+		lineageTag: 80c8c327-c5bb-4110-b069-1c058cf89fe0
+		summarizeBy: none
+		sourceColumn: RUT Constructora
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Coordinador licitación'
+		dataType: string
+		lineageTag: ff92480e-801d-49ae-bb24-b595058c2c52
+		summarizeBy: none
+		sourceColumn: Coordinador licitación
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nombre ITO'
+		dataType: string
+		lineageTag: b564ced8-f64d-4e7e-89ab-4a4b762efa6e
+		summarizeBy: none
+		sourceColumn: Nombre ITO
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Monitor MINSAL'
+		dataType: string
+		lineageTag: 991a22c7-0fd6-413b-8114-b17c0bfbf397
+		summarizeBy: none
+		sourceColumn: Monitor MINSAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Empresa constructora'
+		dataType: string
+		lineageTag: 6bc8676d-8582-4c75-8712-b03839d8baf9
+		summarizeBy: none
+		sourceColumn: Empresa constructora
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Historial licitación'
+		dataType: string
+		lineageTag: 8ae1c144-3106-4b0a-be42-f7cbcc4682bc
+		summarizeBy: none
+		sourceColumn: Historial licitación
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fecha inicio obra'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 9334a048-8d14-4c58-a511-2fdff22fac39
+		summarizeBy: none
+		sourceColumn: Fecha inicio obra
+
+		variation Variación
+			isDefault
+			relationship: fb3f251c-12ca-422b-9a89-e38cbcf54bed
+			defaultHierarchy: LocalDateTable_2eb13fca-a397-473a-b815-2e2eb6a25112.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Fecha término obras'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 982b9926-f423-49c8-a7d8-c1b703c1c49e
+		summarizeBy: none
+		sourceColumn: Fecha término obras
+
+		variation Variación
+			isDefault
+			relationship: bf5188da-7dd2-4fac-a8ae-8e9fc675cb6e
+			defaultHierarchy: LocalDateTable_db99efe3-676d-481c-bbaf-e4b65addd8d5.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Plazo ejecución (días)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 492e7423-9af3-4a6a-a3bb-44e95f65c4ef
+		summarizeBy: sum
+		sourceColumn: Plazo ejecución (días)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Aumento de plazo (días)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 126d9df0-4326-4318-966b-8ff4cf16fe80
+		summarizeBy: sum
+		sourceColumn: Aumento de plazo (días)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fecha término actualizada (con aumento plazo)'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 832aa6d3-b7ce-4345-ad89-6e693a9017d5
+		summarizeBy: none
+		sourceColumn: Fecha término actualizada (con aumento plazo)
+
+		variation Variación
+			isDefault
+			relationship: 58debf3b-5761-4504-a565-7d3938c4a478
+			defaultHierarchy: LocalDateTable_54d58812-7298-4279-b440-a11c5ffb764c.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Trimestre término estimado'
+		dataType: string
+		lineageTag: fd7aaba7-104b-435e-938c-7555f3ec2d49
+		summarizeBy: none
+		sourceColumn: Trimestre término estimado
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Trimestre recepción provisoria sin obs estimado'
+		dataType: string
+		lineageTag: 763cf43b-4bb7-4ce7-89a9-42cbed2acdf4
+		summarizeBy: none
+		sourceColumn: Trimestre recepción provisoria sin obs estimado
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fecha recepción provisoria sin Obs.'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: b89d0376-f8f0-4d18-b995-d083169a7aea
+		summarizeBy: none
+		sourceColumn: Fecha recepción provisoria sin Obs.
+
+		variation Variación
+			isDefault
+			relationship: 72ee3e67-56cc-4c7e-8e6c-8de0f8a30360
+			defaultHierarchy: LocalDateTable_ce12dc4e-3012-42ff-bd22-b61242d806c0.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Proyecto con termino anticipado'
+		dataType: string
+		lineageTag: 221855c3-e491-4f4b-b2da-4024ccee5d49
+		summarizeBy: none
+		sourceColumn: Proyecto con termino anticipado
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fecha termino anticipado'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 0d09d251-295b-47ec-b4a3-b0a91f3b0a18
+		summarizeBy: none
+		sourceColumn: Fecha termino anticipado
+
+		variation Variación
+			isDefault
+			relationship: 1f521501-3f39-44af-b898-083695043c42
+			defaultHierarchy: LocalDateTable_6e7ab65b-7c5e-4659-8569-5dbd68fc3c52.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Trimestre inicio operación estimado'
+		dataType: string
+		lineageTag: 7afd6df9-4099-4dea-b271-0ba8a2590485
+		summarizeBy: none
+		sourceColumn: Trimestre inicio operación estimado
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fecha recepción municipal'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: e7496415-b049-472b-8aaa-ff35acda0dc5
+		summarizeBy: none
+		sourceColumn: Fecha recepción municipal
+
+		variation Variación
+			isDefault
+			relationship: 677dc49b-ade8-40ca-a94a-4db4bd329b5f
+			defaultHierarchy: LocalDateTable_6902c1f4-6c5f-4c6a-a507-9c4c87b86197.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Fecha Autorización Sanitaria'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: a2eb9792-d09e-4412-a720-d4f39048b54a
+		summarizeBy: none
+		sourceColumn: Fecha Autorización Sanitaria
+
+		variation Variación
+			isDefault
+			relationship: d3f08f23-65ad-471a-b1d8-e7d4bd0e0535
+			defaultHierarchy: LocalDateTable_b958961e-23b4-4e5b-9976-fced58e78663.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Presupuesto Oficial UF (sólo APP)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 11a93acc-0986-4f42-b7d4-b27e0debeeee
+		summarizeBy: sum
+		sourceColumn: Presupuesto Oficial UF (sólo APP)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Valor Contrato Inicial $ (Neto+IVA)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 16d9a818-2f81-4c62-a737-ebe2901ab182
+		summarizeBy: sum
+		sourceColumn: Valor Contrato Inicial $ (Neto+IVA)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Valor proforma ($)'
+		dataType: int64
+		formatString: 0
+		lineageTag: d3ca5c7f-caaf-442b-b068-d45cef671e5e
+		summarizeBy: sum
+		sourceColumn: Valor proforma ($)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Presupuesto de obra ($)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 78b64f27-1aaf-4e72-ac59-3a9dc3bc99d9
+		summarizeBy: sum
+		sourceColumn: Presupuesto de obra ($)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Modificaciones aprobadas ($)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 0d6f8f8c-924c-4b26-867f-f5441b89ceb2
+		summarizeBy: sum
+		sourceColumn: Modificaciones aprobadas ($)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mayores gastos generales ($)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 841662cc-f764-466c-ab5e-9d49335c52db
+		summarizeBy: sum
+		sourceColumn: Mayores gastos generales ($)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Valor Contrato Actualizado ($)'
+		dataType: int64
+		formatString: 0
+		lineageTag: d92bb205-5edb-40fa-98b1-cceeda17efe8
+		summarizeBy: sum
+		sourceColumn: Valor Contrato Actualizado ($)
+
+		annotation SummarizationSetBy = Automatic
+
+	column '% Modificaciones respecto valor contratado'
+		dataType: double
+		lineageTag: 5413b798-96f7-4e25-820e-ef147d1ae590
+		summarizeBy: sum
+		sourceColumn: % Modificaciones respecto valor contratado
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Información interna ejecución'
+		dataType: string
+		lineageTag: 64fb8dd2-4f71-41f1-938a-4982ad628005
+		summarizeBy: none
+		sourceColumn: Información interna ejecución
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fecha solicitud reevaluación'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 8720e81f-4d77-476d-b59d-582555d2c6c6
+		summarizeBy: none
+		sourceColumn: Fecha solicitud reevaluación
+
+		variation Variación
+			isDefault
+			relationship: 04a8ed24-b687-48d6-9284-0ba5c0a7b83e
+			defaultHierarchy: LocalDateTable_f827aec8-a9eb-467c-b58b-85ba8471c6ad.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Motivo de la reevaluacion'
+		dataType: string
+		lineageTag: 66efe2f7-f90b-43d8-a557-5e73b100e584
+		summarizeBy: none
+		sourceColumn: Motivo de la reevaluacion
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Item a reevaluar'
+		dataType: string
+		lineageTag: 62da6ba3-1386-4986-ae59-d568cc7cb3e3
+		summarizeBy: none
+		sourceColumn: Item a reevaluar
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Monto a reevaluar'
+		dataType: int64
+		formatString: 0
+		lineageTag: de86aeb4-4a55-4da6-9ef0-9e680505484b
+		summarizeBy: sum
+		sourceColumn: Monto a reevaluar
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Monto total final reevaluacion'
+		dataType: int64
+		formatString: 0
+		lineageTag: 7c6a3d6a-6e7d-4e47-b255-df2cbc3f98ac
+		summarizeBy: sum
+		sourceColumn: Monto total final reevaluacion
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Detalle reevaluacion'
+		dataType: string
+		lineageTag: 2f67af07-c2d4-4afa-a0bb-cc649230d90d
+		summarizeBy: none
+		sourceColumn: Detalle reevaluacion
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Trimestre estimado fin reevaluación'
+		dataType: string
+		lineageTag: 4ee64d29-453e-44e2-a834-fe8725d448fa
+		summarizeBy: none
+		sourceColumn: Trimestre estimado fin reevaluación
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fecha nuevo RS tras reevaluación'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 6f8f8cce-769b-4f9a-a2e1-f31cf7e30ca9
+		summarizeBy: none
+		sourceColumn: Fecha nuevo RS tras reevaluación
+
+		variation Variación
+			isDefault
+			relationship: 3b6d65fa-69e9-4c90-9658-8b9833139c61
+			defaultHierarchy: LocalDateTable_a87149fe-3251-4202-897c-23ec58ae487c.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Modalidad transferencia terreno'
+		dataType: string
+		lineageTag: 77a3de3b-5394-4cdd-a445-c99dd5dc9df7
+		summarizeBy: none
+		sourceColumn: Modalidad transferencia terreno
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Estado terreno'
+		dataType: string
+		lineageTag: bfbd5d39-0c07-4f08-8299-57bfde68dd41
+		summarizeBy: none
+		sourceColumn: Estado terreno
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Detalle terreno'
+		dataType: string
+		lineageTag: 05fb156f-bbeb-46c7-9ead-fd089397c29e
+		summarizeBy: none
+		sourceColumn: Detalle terreno
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Finalización programada del traspaso'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 35411f51-8df9-4473-ab65-0d362b0292e5
+		summarizeBy: none
+		sourceColumn: Finalización programada del traspaso
+
+		variation Variación
+			isDefault
+			relationship: 11cab8f6-44a8-4ffd-ad60-78084fd4c943
+			defaultHierarchy: LocalDateTable_637ea04f-3244-4ba8-8265-3b633628ca40.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fecha fin traspaso a MBN'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 46a9d971-a2a2-4798-95c5-a33489f1dbe4
+		summarizeBy: none
+		sourceColumn: Fecha fin traspaso a MBN
+
+		variation Variación
+			isDefault
+			relationship: c1d6fee1-d508-46c6-8090-3c57ab1b9f97
+			defaultHierarchy: LocalDateTable_ee579394-f4fd-4e7a-bb36-151734807eb3.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Superficie terreno (m2)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 146c25ee-e90f-4789-a9a2-a08b30f71edc
+		summarizeBy: sum
+		sourceColumn: Superficie terreno (m2)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'N° ROL (SII)'
+		dataType: string
+		lineageTag: f0e727fe-5d78-489b-a851-e4b8b9e5caeb
+		summarizeBy: none
+		sourceColumn: N° ROL (SII)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Dirección (calle, N°, lote, otro)'
+		dataType: string
+		lineageTag: 12c52296-911d-477e-b559-d6889806caed
+		summarizeBy: none
+		sourceColumn: Dirección (calle, N°, lote, otro)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Coordinador APP'
+		dataType: string
+		lineageTag: a255aac5-6ae7-4d6b-bbac-dbe02c2b038e
+		summarizeBy: none
+		sourceColumn: Coordinador APP
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Referente SS anteproyecto arq.'
+		dataType: string
+		lineageTag: ad74bb33-2a61-49dd-802e-2ff9909cdc63
+		summarizeBy: none
+		sourceColumn: Referente SS anteproyecto arq.
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Estado anteproyecto'
+		dataType: string
+		lineageTag: 7366640b-493a-411c-8c21-c59fa10105de
+		summarizeBy: none
+		sourceColumn: Estado anteproyecto
+
+		annotation SummarizationSetBy = Automatic
+
+	column '% Avance estimado anteproyecto'
+		dataType: int64
+		formatString: 0
+		lineageTag: 80768687-6638-40a4-9b4c-a8e1d7846391
+		summarizeBy: sum
+		sourceColumn: % Avance estimado anteproyecto
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Detalle avance anteproyecto (fecha.detalle)'
+		dataType: string
+		lineageTag: 8ce8c8d8-f865-4142-b07c-643d2aaf877b
+		summarizeBy: none
+		sourceColumn: Detalle avance anteproyecto (fecha.detalle)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fecha inicio partido general'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 901cb112-3776-4a29-ac75-eacaad8b2c5c
+		summarizeBy: none
+		sourceColumn: Fecha inicio partido general
+
+		variation Variación
+			isDefault
+			relationship: 6baf8451-6e10-4446-a617-86e03d94a18c
+			defaultHierarchy: LocalDateTable_fa1c7c64-0e30-410d-9959-74f235e14eb8.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Fecha inicio anteproyecto'
+		dataType: string
+		lineageTag: 27734fc4-7ed6-4799-8863-701dc0dce05e
+		summarizeBy: none
+		sourceColumn: Fecha inicio anteproyecto
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fecha fin anteproyecto'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 69f78503-086f-480e-b530-c23667ff9cca
+		summarizeBy: none
+		sourceColumn: Fecha fin anteproyecto
+
+		variation Variación
+			isDefault
+			relationship: 208925c6-a081-48ae-8014-99eb1af20a9b
+			defaultHierarchy: LocalDateTable_dba6f8c5-62a2-4550-b1bc-b047ebbbe8bb.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Empresa encargada anteproyecto'
+		dataType: string
+		lineageTag: 481b7a7e-a732-4707-85e2-eefb10c0954d
+		summarizeBy: none
+		sourceColumn: Empresa encargada anteproyecto
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Cargar archivo'
+		dataType: string
+		lineageTag: 6999b3b9-e756-47eb-94cb-bc96e7b06203
+		summarizeBy: none
+		sourceColumn: Cargar archivo
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Último nivel'
+		dataType: int64
+		formatString: 0
+		lineageTag: ef61f565-e2d5-4f09-8be2-23350cec3675
+		summarizeBy: sum
+		sourceColumn: Último nivel
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Registrar riesgo'
+		dataType: string
+		lineageTag: 63395633-42f9-425a-9248-f3b41188c358
+		summarizeBy: none
+		sourceColumn: Registrar riesgo
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Id interno'
+		dataType: int64
+		formatString: 0
+		lineageTag: 47be3432-c74d-44e3-bc71-7ac766cba25b
+		summarizeBy: sum
+		sourceColumn: Id interno
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Finalizacion programada anteproyecto'
+		dataType: string
+		lineageTag: 9eadce0b-528b-408f-8804-da94d5bd31df
+		summarizeBy: none
+		sourceColumn: Finalizacion programada anteproyecto
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Historial del TAC'
+		dataType: string
+		lineageTag: c0ae8d08-64f4-4eb5-b136-c7c7ad261280
+		summarizeBy: none
+		sourceColumn: Historial del TAC
+
+		annotation SummarizationSetBy = Automatic
+
+	column Dirección
+		dataType: string
+		lineageTag: af8b85cc-5fde-4407-b837-8865d86585cc
+		summarizeBy: none
+		sourceColumn: Dirección
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Servicio Salud - Copia.1'
+		dataType: int64
+		formatString: 0
+		lineageTag: eafff876-bbb2-4b81-9a49-cece154b0b65
+		summarizeBy: sum
+		sourceColumn: Servicio Salud - Copia.1
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Serv. Salud'
+		dataType: string
+		lineageTag: dc9a8026-3c86-4ca6-8d47-156422064683
+		summarizeBy: none
+		sourceColumn: Serv. Salud
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Cartera - Copia.1'
+		dataType: int64
+		formatString: 0
+		lineageTag: 870896d5-b8f6-485e-b288-74b5719db673
+		summarizeBy: sum
+		sourceColumn: Cartera - Copia.1
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Cartera.'
+		dataType: string
+		lineageTag: 1d140dbc-55df-4698-b6da-2c4ccd840d30
+		summarizeBy: none
+		sourceColumn: Cartera.
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Portfolio = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("C:\Users\Ricardo\Desktop\Power BI\Minsal\Base de Datos Ejemplo_1.xlsx"), null, true),
+				    Portfolio_Sheet = Origen{[Item="Portfolio",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Portfolio_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"map", type any}, {"Proyecto", type text}, {"Tipo Ficha", type text}, {"Jefe Proyecto", type text}, {"Tiempo actualización", Int64.Type}, {"Código BIP", Int64.Type}, {"Región N°", type text}, {"Servicio Salud", type text}, {"Comuna", type text}, {"Comuna de Influencia", type any}, {"Tipo", type text}, {"Cartera", type text}, {"Complejidad", type text}, {"Tipo CESFAM", type any}, {"Estado", type text}, {"Subestado", type text}, {"Estatus mes actual", type text}, {"Modalidad contratación", type text}, {"Fase diseño-ejecución", type text}, {"Poblacion beneficiaria", Int64.Type}, {"Superficie (m2)", Int64.Type}, {"N° de camas actuales", Int64.Type}, {"N° de camas proyectado", Int64.Type}, {"N° de pabellones", Int64.Type}, {"N° camas básicas", Int64.Type}, {"N° camas críticas", Int64.Type}, {"N° camas agudas", Int64.Type}, {"N° camas salud mental", Int64.Type}, {"N° salas parto integral", Int64.Type}, {"Otras Camas", Int64.Type}, {"N° box total", Int64.Type}, {"N° box médicos", Int64.Type}, {"N° box no médicos", Int64.Type}, {"N° box dental", Int64.Type}, {"N° salas de procedimiento", Int64.Type}, {"N° sillones diálisis", Int64.Type}, {"N° sillones QT", Int64.Type}, {"Rate vigente", type text}, {"Convenio programación", type text}, {"Financ. etapa actual", type text}, {"Monto Ficha IDI M$", Int64.Type}, {"Programa gobierno", type text}, {"Detalle del mes", type text}, {"Nudos Críticos", type text}, {"Acciones Correctivas", type text}, {"%Avance real", Percentage.Type}, {"%Avance plan", Percentage.Type}, {"Desviación", type number}, {"Fecha última actualización", type datetime}, {"Usuario última actualización", type text}, {"Empresa encargada estudio", type text}, {"Fecha inicio estudio", type date}, {"Fecha término estimada estudio", type any}, {"Superficie PMA (M2)", Int64.Type}, {"Coordinador proyecto estudios", type text}, {"Información interna estudios", type text}, {"Empresa encargada diseño", type text}, {"Fecha inicio diseño", type date}, {"Fecha término estimada diseño", type any}, {"Fecha RS diseño", type date}, {"Superficie diseño (m2)", Int64.Type}, {"Información interna diseño", type text}, {"Id licitación", type text}, {"Bases de licitación", type text}, {"Fecha publicación", type date}, {"Fecha apertura técnica", type date}, {"Fecha adjudicación portal", type date}, {"Presupuesto estimado ($)", Int64.Type}, {"Empresas oferentes", type text}, {"Empresa adjudicada", type text}, {"Fecha aprobación contrato", type date}, {"Fecha entrega terreno", type any}, {"RUT Constructora", type text}, {"Coordinador licitación", type text}, {"Nombre ITO", type text}, {"Monitor MINSAL", type text}, {"Empresa constructora", type text}, {"Historial licitación", type text}, {"Fecha inicio obra", type date}, {"Fecha término obras", type date}, {"Plazo ejecución (días)", Int64.Type}, {"Aumento de plazo (días)", Int64.Type}, {"Fecha término actualizada (con aumento plazo)", type date}, {"Trimestre término estimado", type text}, {"Trimestre recepción provisoria sin obs estimado", type text}, {"Fecha recepción provisoria sin Obs.", type date}, {"Proyecto con termino anticipado", type text}, {"Fecha termino anticipado", type date}, {"Trimestre inicio operación estimado", type text}, {"Fecha recepción municipal", type date}, {"Fecha Autorización Sanitaria", type date}, {"Presupuesto Oficial UF (sólo APP)", Int64.Type}, {"Valor Contrato Inicial $ (Neto+IVA)", Int64.Type}, {"Valor proforma ($)", Int64.Type}, {"Presupuesto de obra ($)", Int64.Type}, {"Modificaciones aprobadas ($)", Int64.Type}, {"Mayores gastos generales ($)", Int64.Type}, {"Valor Contrato Actualizado ($)", Int64.Type}, {"% Modificaciones respecto valor contratado", type number}, {"Información interna ejecución", type text}, {"Fecha solicitud reevaluación", type date}, {"Motivo de la reevaluacion", type text}, {"Item a reevaluar", type text}, {"Monto a reevaluar", Int64.Type}, {"Monto total final reevaluacion", Int64.Type}, {"Detalle reevaluacion", type text}, {"Trimestre estimado fin reevaluación", type text}, {"Fecha nuevo RS tras reevaluación", type datetime}, {"Modalidad transferencia terreno", type text}, {"Estado terreno", type text}, {"Detalle terreno", type text}, {"Finalización programada del traspaso", type datetime}, {"Fecha fin traspaso a MBN", type datetime}, {"Superficie terreno (m2)", Int64.Type}, {"N° ROL (SII)", type text}, {"Dirección (calle, N°, lote, otro)", type any}, {"Coordinador APP", type text}, {"Referente SS anteproyecto arq.", type text}, {"Estado anteproyecto", type text}, {"% Avance estimado anteproyecto", Int64.Type}, {"Detalle avance anteproyecto (fecha.detalle)", type text}, {"Fecha inicio partido general", type date}, {"Fecha inicio anteproyecto", type any}, {"Fecha fin anteproyecto", type date}, {"Empresa encargada anteproyecto", type text}, {"Cargar archivo", type any}, {"Último nivel", Int64.Type}, {"Registrar riesgo", type any}, {"Id interno", Int64.Type}, {"Finalizacion programada anteproyecto", type any}, {"Historial del TAC", type text}, {"Dirección", type any}}),
+				    #"Fecha extraída" = Table.TransformColumns(#"Tipo cambiado",{{"Fecha última actualización", DateTime.Date, type date}}),
+				    #"Tipo cambiado1" = Table.TransformColumnTypes(#"Fecha extraída",{{"Desviación", Percentage.Type}}),
+				    #"Columna duplicada" = Table.DuplicateColumn(#"Tipo cambiado1", "Servicio Salud", "Servicio Salud - Copia"),
+				    #"Dividir columna por posición" = Table.SplitColumn(#"Columna duplicada", "Servicio Salud - Copia", Splitter.SplitTextByPositions({0, 3}, false), {"Servicio Salud - Copia.1", "Servicio Salud - Copia.2"}),
+				    #"Tipo cambiado2" = Table.TransformColumnTypes(#"Dividir columna por posición",{{"Servicio Salud - Copia.1", Int64.Type}, {"Servicio Salud - Copia.2", type text}}),
+				    #"Columnas con nombre cambiado" = Table.RenameColumns(#"Tipo cambiado2",{{"Servicio Salud - Copia.2", "Serv. Salud"}}),
+				    #"Columna duplicada1" = Table.DuplicateColumn(#"Columnas con nombre cambiado", "Cartera", "Cartera - Copia"),
+				    #"Dividir columna por posición1" = Table.SplitColumn(#"Columna duplicada1", "Cartera - Copia", Splitter.SplitTextByPositions({0, 3}, false), {"Cartera - Copia.1", "Cartera - Copia.2"}),
+				    #"Tipo cambiado3" = Table.TransformColumnTypes(#"Dividir columna por posición1",{{"Cartera - Copia.1", Int64.Type}, {"Cartera - Copia.2", type text}}),
+				    #"Columnas con nombre cambiado1" = Table.RenameColumns(#"Tipo cambiado3",{{"Cartera - Copia.2", "Cartera."}})
+				in
+				    #"Columnas con nombre cambiado1"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navegación
+

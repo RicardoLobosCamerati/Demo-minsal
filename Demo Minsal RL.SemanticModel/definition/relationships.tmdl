@@ -1,0 +1,105 @@
+relationship 7e37cd2d-53f8-43be-8d0c-e238dddadcf6
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Portfolio.'Fecha última actualización'
+	toColumn: LocalDateTable_d53a9b8a-78f4-4689-a3bb-c93b7deb3682.Date
+
+relationship dd37fef7-ed92-48a3-a601-4d3ef7e9643d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Portfolio.'Fecha inicio estudio'
+	toColumn: LocalDateTable_d4169f55-9ec8-4c04-89a5-6ffe72060bd8.Date
+
+relationship 41c07738-5026-4e0b-a041-aaad6f09e599
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Portfolio.'Fecha inicio diseño'
+	toColumn: LocalDateTable_832751e2-4224-4647-9271-ec86530cf0a2.Date
+
+relationship a03aeef3-08e7-49f6-b088-65497ecde889
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Portfolio.'Fecha RS diseño'
+	toColumn: LocalDateTable_63ebcd9b-5e03-4159-a32d-f40fade95926.Date
+
+relationship 1a3f41cc-f437-4478-8f12-53d34bebcda4
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Portfolio.'Fecha publicación'
+	toColumn: LocalDateTable_8ca8f447-e026-4473-84cd-fd3c8e3b306a.Date
+
+relationship 62112d25-23d8-4a77-afd8-c361de699f98
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Portfolio.'Fecha apertura técnica'
+	toColumn: LocalDateTable_0f865f71-cf95-4e60-8a1e-9645026aea89.Date
+
+relationship 7e942d2c-9bf4-4b7c-b90a-14f5721c1709
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Portfolio.'Fecha adjudicación portal'
+	toColumn: LocalDateTable_69ef80a7-972c-4977-b180-8c97577a8ccc.Date
+
+relationship eac9809d-5ff3-402f-b256-544d1f231411
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Portfolio.'Fecha aprobación contrato'
+	toColumn: LocalDateTable_98c27d9c-ee02-47c7-96f9-b2da37306077.Date
+
+relationship fb3f251c-12ca-422b-9a89-e38cbcf54bed
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Portfolio.'Fecha inicio obra'
+	toColumn: LocalDateTable_2eb13fca-a397-473a-b815-2e2eb6a25112.Date
+
+relationship bf5188da-7dd2-4fac-a8ae-8e9fc675cb6e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Portfolio.'Fecha término obras'
+	toColumn: LocalDateTable_db99efe3-676d-481c-bbaf-e4b65addd8d5.Date
+
+relationship 58debf3b-5761-4504-a565-7d3938c4a478
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Portfolio.'Fecha término actualizada (con aumento plazo)'
+	toColumn: LocalDateTable_54d58812-7298-4279-b440-a11c5ffb764c.Date
+
+relationship 72ee3e67-56cc-4c7e-8e6c-8de0f8a30360
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Portfolio.'Fecha recepción provisoria sin Obs.'
+	toColumn: LocalDateTable_ce12dc4e-3012-42ff-bd22-b61242d806c0.Date
+
+relationship 1f521501-3f39-44af-b898-083695043c42
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Portfolio.'Fecha termino anticipado'
+	toColumn: LocalDateTable_6e7ab65b-7c5e-4659-8569-5dbd68fc3c52.Date
+
+relationship 677dc49b-ade8-40ca-a94a-4db4bd329b5f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Portfolio.'Fecha recepción municipal'
+	toColumn: LocalDateTable_6902c1f4-6c5f-4c6a-a507-9c4c87b86197.Date
+
+relationship d3f08f23-65ad-471a-b1d8-e7d4bd0e0535
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Portfolio.'Fecha Autorización Sanitaria'
+	toColumn: LocalDateTable_b958961e-23b4-4e5b-9976-fced58e78663.Date
+
+relationship 04a8ed24-b687-48d6-9284-0ba5c0a7b83e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Portfolio.'Fecha solicitud reevaluación'
+	toColumn: LocalDateTable_f827aec8-a9eb-467c-b58b-85ba8471c6ad.Date
+
+relationship 3b6d65fa-69e9-4c90-9658-8b9833139c61
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Portfolio.'Fecha nuevo RS tras reevaluación'
+	toColumn: LocalDateTable_a87149fe-3251-4202-897c-23ec58ae487c.Date
+
+relationship 11cab8f6-44a8-4ffd-ad60-78084fd4c943
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Portfolio.'Finalización programada del traspaso'
+	toColumn: LocalDateTable_637ea04f-3244-4ba8-8265-3b633628ca40.Date
+
+relationship c1d6fee1-d508-46c6-8090-3c57ab1b9f97
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Portfolio.'Fecha fin traspaso a MBN'
+	toColumn: LocalDateTable_ee579394-f4fd-4e7a-bb36-151734807eb3.Date
+
+relationship 6baf8451-6e10-4446-a617-86e03d94a18c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Portfolio.'Fecha inicio partido general'
+	toColumn: LocalDateTable_fa1c7c64-0e30-410d-9959-74f235e14eb8.Date
+
+relationship 208925c6-a081-48ae-8014-99eb1af20a9b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Portfolio.'Fecha fin anteproyecto'
+	toColumn: LocalDateTable_dba6f8c5-62a2-4550-b1bc-b047ebbbe8bb.Date
+

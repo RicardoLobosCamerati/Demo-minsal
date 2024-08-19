@@ -1,0 +1,47 @@
+model Model
+	culture: es-MX
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-CL
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+/// Errores en las consultas cargadas en 09-08-2024 15:49:27.
+queryGroup 'Errores en las consultas: 09-08-2024 15:49:27'
+
+	annotation PBI_QueryGroupOrder = 0
+
+annotation PBI_QueryOrder = ["Portfolio","Errores en Portfolio"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.131.1203.0 (24.07)
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Portfolio
+ref table DateTableTemplate_996e8972-2eda-4959-9e3f-b7aaff9780dc
+ref table LocalDateTable_d53a9b8a-78f4-4689-a3bb-c93b7deb3682
+ref table LocalDateTable_d4169f55-9ec8-4c04-89a5-6ffe72060bd8
+ref table LocalDateTable_832751e2-4224-4647-9271-ec86530cf0a2
+ref table LocalDateTable_63ebcd9b-5e03-4159-a32d-f40fade95926
+ref table LocalDateTable_8ca8f447-e026-4473-84cd-fd3c8e3b306a
+ref table LocalDateTable_0f865f71-cf95-4e60-8a1e-9645026aea89
+ref table LocalDateTable_69ef80a7-972c-4977-b180-8c97577a8ccc
+ref table LocalDateTable_98c27d9c-ee02-47c7-96f9-b2da37306077
+ref table LocalDateTable_2eb13fca-a397-473a-b815-2e2eb6a25112
+ref table LocalDateTable_db99efe3-676d-481c-bbaf-e4b65addd8d5
+ref table LocalDateTable_54d58812-7298-4279-b440-a11c5ffb764c
+ref table LocalDateTable_ce12dc4e-3012-42ff-bd22-b61242d806c0
+ref table LocalDateTable_6e7ab65b-7c5e-4659-8569-5dbd68fc3c52
+ref table LocalDateTable_6902c1f4-6c5f-4c6a-a507-9c4c87b86197
+ref table LocalDateTable_b958961e-23b4-4e5b-9976-fced58e78663
+ref table LocalDateTable_f827aec8-a9eb-467c-b58b-85ba8471c6ad
+ref table LocalDateTable_a87149fe-3251-4202-897c-23ec58ae487c
+ref table LocalDateTable_637ea04f-3244-4ba8-8265-3b633628ca40
+ref table LocalDateTable_ee579394-f4fd-4e7a-bb36-151734807eb3
+ref table LocalDateTable_fa1c7c64-0e30-410d-9959-74f235e14eb8
+ref table LocalDateTable_dba6f8c5-62a2-4550-b1bc-b047ebbbe8bb
+
+ref cultureInfo es-MX
+
